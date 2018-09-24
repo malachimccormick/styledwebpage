@@ -1,0 +1,347 @@
+body, html{
+  
+  height: 200%;
+  min-width: 1000px;
+  min-height: 1000px;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  background: url("mountain.jpg") no-repeat center center fixed;
+  
+  /*
+  background-position: center;
+  background-repeat: no-repeat;*/
+  background-size: cover;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+
+
+#wordsontop {
+  position: relative;
+  z-index: -1;
+  background-color: whitesmoke;
+  opacity: .4;
+  width: 100%;
+  height: 135%;
+  margin-top: -5%;
+  
+  
+
+  /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;*/
+
+}
+
+.head {
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  border: 2px black;
+  text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header {
+  height: 2%;
+  width: 100%;
+  
+    /*Background-color: grey;
+    opacity: .6;*/
+    
+    
+    
+    
+    
+
+}
+
+.nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  /*background-color: orange;*/
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 18px;
+
+  
+  
+  
+}
+.picsandbio { 
+  position: relative; 
+  
+    
+    overflow: auto;
+    width: 100%;
+    height: 15%;
+    
+    /*background-image: url("selfie.jpg");*/
+    margin-top: 15%;
+    
+    
+    /*border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
+    border-left: 2px dashed white;
+    border-right: 2px dashed white;*/
+  }
+  
+  #profilepic {
+    background-image: url("selfie.jpg");
+    background-repeat: no-repeat; 
+    background-image: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    
+    
+
+    width: 25%;
+    border-radius: 50%;
+    height: 80%; 
+    margin-top: 1%; 
+    padding: 10px;
+    
+    border: 2px solid white;
+    float: left;
+    margin-left: 1.4%;
+    
+  
+  }
+  .topwords {
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    height: 70%;
+    margin-top: 0%;
+    margin-left: 40%;
+    padding: 1em;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 135%;
+    font-weight: bold;
+    color: black;
+
+
+  }
+ 
+  #bio {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    word-wrap: break-word;
+    width: 100%;
+    height: 90%;  
+    align-self: right;
+    margin-left: -3%;
+    margin-top: -33%;
+    margin-right: 15%;
+    padding: 1em;
+    background: whitesmoke;
+    float: left;
+    border: 2px solid black;
+    opacity: .4;
+    
+    
+  }
+
+ 
+
+  .favorites { 
+    display: flex;
+    justify-content: space-around;  
+    overflow:auto;
+    width: 95%;
+    height: 10%;
+
+    
+    
+    margin-left: 2%;
+    margin-top: 20%;
+    
+    
+  }
+  ul {
+    margin: 15px;
+    padding: 0px;
+    list-style: none;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  ul li {
+   
+    width: 100%;
+    height: 40px;
+    background-color: lightslategray;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+    
+    
+
+}
+  /*
+  #tvshows, #movies, #music {
+    width: 40px;
+    height: 40px;
+    margin: 5px; 
+    padding: 1em;
+    background: blue;
+  }
+  */
+  #movies {   
+     
+    background-color: whitesmoke;
+    width: 25%;
+    text-align: center;
+    height:85%;
+    margin: 10px;
+    border: 3px solid black;
+
+    
+  }
+  #tvshows { 
+      
+      /*grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows:  20% 20% 20% 20% 20%; 
+      justify-content: center;
+      flex-direction: column;*/
+      background-color: whitesmoke;
+      width: 25%;
+      text-align: center;
+      height: 85%;
+      margin: 10px;
+      text-align: center;
+      border: 3px solid black;
+      
+    
+ 
+  }  
+ 
+  #music {
+      background-color:whitesmoke;
+      width: 25%;
+      height: 85%;
+      margin: 10px;
+      text-align: center;
+      border: 3px solid black;
+  }
+
+  .scrolltext {
+    height: 5%;	
+    overflow: hidden;
+    position: relative;
+    margin-top: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .scrolltext h3 {
+    font-size: 3em;
+    color: rgb(248, 7, 7);
+    font-weight: 600;
+    position: absolute;
+    width: 265%;
+    height: 100%;
+    margin: 0;
+    margin-top: 10px;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scrolltext 20s linear infinite;
+    -webkit-animation: scrolltext 20s linear infinite;
+    animation: scrolltext 20s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scrolltext {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scrolltext {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scrolltext {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+  .socialmedia {
+    position: relative;
+    z-index: 2;
+    
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 15%;
+    
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    position: relative;
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .giphy-embed {
+    height:40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    
+  }
+  
+
